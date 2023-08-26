@@ -36,7 +36,7 @@ body {
 	font-size             : 16px;
 	-webkit-font-smoothing: antialiased;
 
-	.header_1 {
+	.navbar-default {
 		padding-top            : 15px;
 		//padding-bottom: 15px;
 		padding-right          : 5%;
@@ -48,157 +48,168 @@ body {
 		-webkit-backdrop-filter: saturate(180%) blur(15px);
 		background-color       : rgba(255, 255, 255, .6);
 
-
-
-		.dropdown {
-			a {}
+		@media only screen and (max-width: 767px) {
+			padding: 10px 0px;
 		}
 
-		.header_2 {
-			.header_3 {
-				.navbar-brand {
-					.img_1 {
-						max-width: 200px;
-						position : relative;
-						top      : -15px;
+		.navbar-brand {
+			@media only screen and (max-width: 767px) {
+				padding-left: 0px;
+			}
+		}
+
+		.logo_desk {
+			max-width: 200px;
+			position : relative;
+			top      : -15px;
+
+			@media only screen and (max-width: 767px) {
+				max-width: 120px;
+				position : relative;
+				top      : -5px;
+			}
+		}
+
+		.navbar-ex1-collapse {
+			.logo_mobile {
+				display: none;
+			}
+
+			.hr_1 {
+				display: none;
+			}
+
+			.yamm-fw {
+				min-width: 960px;
+				padding  : 30px 50px;
+				right    : -500px;
+				left     : unset;
+
+				@media only screen and (max-width: 767px) {
+					min-width: unset;
+					padding  : 15px 15px 15px 35px;
+					clear    : both;
+				}
+
+				.col_menu {
+					display    : flex;
+					gap        : 15px;
+					align-items: flex-start;
+
+					p {
+						color        : #000038;
+						font-size    : 16px;
+						font-weight  : 400;
+						line-height  : 19.2px;
+						margin-bottom: 12px;
+					}
+
+					.t_1 {
+						font-size  : 18px;
+						font-weight: 700;
+						margin     : 10px 0px 20px;
+
+					}
+
+					.t_2 {
+						color      : #10059F;
+						font-weight: 700;
 					}
 				}
 			}
 
-			.header_4 {
+			.text_menu {
+				float        : left;
+				padding-right: 5px;
 
-				.yamm-fw {
-
-					min-width: 960px;
-					padding  : 30px 50px;
-					right    : -500px;
-					left     : unset;
-
-					.logo_mobile {
-						display: none;
-					}
-
-					.menu_2 {
-						display    : flex;
-						gap        : 15px;
-						align-items: flex-start;
-
-						p {
-							color        : #000038;
-							font-size    : 16px;
-							font-weight  : 400;
-							line-height  : 19.2px;
-							margin-bottom: 12px;
-						}
-
-						.t_1 {
-							font-size  : 18px;
-							font-weight: 700;
-							margin     : 10px 0px 20px;
-
-						}
-
-						.t_2 {
-							color      : #10059F;
-							font-weight: 700;
-						}
-					}
+				@media only screen and (max-width: 767px) {
+					width: 80%;
 				}
+			}
 
-				.menu_1 {
-					display : flex;
-					padding : 0px;
-					position: relative;
+			.dropdown {
+				display : flex;
+				padding : 0px;
+				position: relative;
 
-					.fa-chevron-right {
-						display: none;
-					}
+				.fa-chevron-right {
+					display: none;
 				}
+			}
 
-
-
-				.menu_text {
-					float        : left;
-					padding-right: 5px;
+			.nav>li {
+				@media only screen and (max-width: 767px) {
+					clear  : both;
+					display: block;
 				}
+			}
 
-				.toggle_1 {
-					float      : left;
-					padding    : 15px 10px 0px 0px;
-					margin-top : 0px;
-					font-size  : 18px;
-					font-weight: bold;
+			.dropdown-toggle {
+				float      : left;
+				padding    : 15px 10px 0px 0px;
+				margin-top : 0px;
+				font-size  : 18px;
+				font-weight: bold;
 
-					.fa-angle-down {
-						transition: 0.5s all;
-					}
-				}
-
-				.open {
-					border-bottom: 2px solid #10059F;
-
-					.fa-angle-down {
-						transform: rotate(180deg);
-
-					}
-
+				.fa-angle-down {
+					transition: 0.5s all;
 				}
 
 				@media only screen and (max-width: 767px) {
-					position        : fixed;
-					top             : 0;
-					left            : -330px;
-					z-index         : 9999999999;
-					width           : 330px;
-					height          : 100vh;
-					background-color: #fff;
-					overflow        : auto;
-					transition      : 0.5s;
-					display         : block;
-					border-right    : 0px solid #ccc;
-					max-height      : unset !important;
-					padding         : 15px;
-					margin          : 0px;
+					padding-bottom: 10px !important;
+					display       : inline-block;
+					padding       : 10px 15px;
+				}
+			}
 
-					.logo_mobile {
-						display: block;
-					}
+			.open {
+				border-bottom: 2px solid #10059F;
+
+				@media only screen and (max-width: 767px) {
+					border-bottom: unset;
+				}
+
+				.fa-angle-down {
+					transform: rotate(180deg);
+
+				}
+
+			}
+
+			@media only screen and (max-width: 767px) {
+				position        : fixed;
+				top             : 0;
+				left            : -330px;
+				z-index         : 9999999999;
+				width           : 330px;
+				height          : 100vh;
+				background-color: #fff;
+				overflow        : auto;
+				transition      : 0.5s;
+				display         : block;
+				border-right    : 0px solid #ccc;
+				max-height      : unset !important;
+				padding         : 15px;
+				margin          : 0px;
+
+				.logo_mobile {
+					display   : block;
+					max-width : 120px;
+					margin-top: 5px;
+				}
+
+				.hr_1 {
+					display: block;
+				}
+
+				.fa-chevron-right {
+					display: inline-block;
+					float  : right;
 				}
 			}
 		}
 
-		@media only screen and (max-width: 767px) {
-			padding         : 10px 0px;
-			background-color: #fff;
 
-			.header_2 {
-				.header_3 {
-					.navbar-brand {
-						.img_1 {
-							max-width: 120px;
-							position : relative;
-							top      : unset;
-						}
-					}
-				}
-
-				.header_4 {
-					.fa-chevron-right {
-						display: inline-block;
-						float  : right;
-					}
-
-					.dropdown-toggle {
-						padding-bottom: 10px !important;
-						display       : inline-block;
-					}
-				}
-
-				.navbar-toggle {
-					padding: 0px;
-				}
-			}
-		}
 	}
 
 	.slider_desktop {
@@ -566,6 +577,8 @@ body {
 }
 
 ////////////////////	menu nav bar	/////////////////////
+
+
 .navbar-default .navbar-nav>.open>a:hover {
 	background-color: transparent;
 }
@@ -591,8 +604,9 @@ body {
 	}
 }
 
-@media only screen and (max-width: 767px) {
-	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	@media only screen and (max-width: 767px) {
 		color: #000;
 	}
 }
@@ -626,15 +640,15 @@ body {
 
 .dropdown-submenu:hover>.dropdown-menu {
 	width: 100%;
-}
 
-@media only screen and (max-width: 767px) {
-	.dropdown-submenu:hover>.dropdown-menu {
+	@media only screen and (max-width: 767px) {
 		width   : 80%;
 		position: relative;
 		left    : 5%;
 	}
 }
+
+
 
 .dropdown-submenu:hover>a:after {
 	border-left-color: #fff;
@@ -664,6 +678,10 @@ body {
 	border-color      : #fff;
 	//background-color: rgba(255,255,255,0);
 	border-color      : rgba(255, 255, 255, 0);
+
+	@media only screen and (max-width: 767px) {
+		padding: 0px;
+	}
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -680,52 +698,109 @@ body {
 }
 
 
-/////////////////////	animation navbar toggle button in mobile ////////////////////
-.bar1,
-.bar2,
-.bar3 {
-	transition: 0.3s;
-}
-
-.change .bar1 {
-	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-	transform        : rotate(-45deg) translate(-4px, 5px);
-}
-
-.change .bar2 {
-	opacity: 0;
-}
-
-.change .bar3 {
-	-webkit-transform: rotate(45deg) translate(-8px, -8px);
-	transform        : rotate(45deg) translate(-4px, -5px);
-}
-
-.menu-open {
-	transform: translate(-230px, 0);
-}
-
-@media only screen and (min-width: 767px) {
-	.navbar-nav>li>a {
-		padding-bottom: 30px;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-
-	.nav .open>a,
-	.nav .open>a:focus,
-	.nav .open>a:hover {
-		background-color: unset;
-	}
-}
-
-
 
 /////////////////////	owl carousel  ////////////////////
 .owl-next:focus,
 .owl-prev:focus {
 	outline: none;
+}
+
+body .carousel {
+	width   : 100%;
+	margin  : 0px auto;
+	position: relative;
+}
+
+body .carousel .owl-theme .owl-dots {
+	position: absolute;
+	left    : 47%;
+	bottom  : 0%;
+}
+
+body .carousel .owl-theme .owl-dots .owl-dot {
+	outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+	body .carousel .owl-theme .owl-dots {
+		left: 40%;
+	}
+}
+
+body .carousel .owl-theme .owl-dots .owl-dot span {
+	background: #fff;
+}
+
+body .carousel .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+	background: #10059F;
+}
+
+@media only screen and (max-width: 767px) {
+
+	body .carousel .owl-theme .custom-nav .owl-next,
+	body .carousel .owl-theme .custom-nav .owl-prev {
+		top: 30%;
+	}
+}
+
+body .carousel .owl-theme .custom-nav .owl-next {
+	right: 10px;
+}
+
+body .carousel .owl-theme .custom-nav .owl-prev {
+	left: 10px;
+}
+
+body .carousel .owl-theme .custom-nav .owl-prev i,
+body .carousel .owl-theme .custom-nav .owl-next i {
+	font-size: 20px;
+	color    : #000;
+}
+
+body .carousel .owl-theme .custom-nav .owl-prev,
+body .carousel .owl-theme .custom-nav .owl-next {
+	transition      : 0.5s;
+	width           : 35px;
+	height          : 35px;
+	border-radius   : 50%;
+	background-color: #fff;
+	position        : absolute;
+	top             : 43%;
+	border          : none;
+	z-index         : 1;
+	outline         : none;
+	box-shadow      : 0px 0px 5px 0px #aaa;
+}
+
+/* @media only screen and (max-width: 767px){
+  body .carousel .owl-theme .custom-nav .owl-prev,body .carousel .owl-theme .custom-nav .owl-next{
+    background-color: unset;
+    box-shadow: unset;
+  }
+} */
+@media only screen and (min-width: 767px) {
+
+	body .carousel .owl-theme .custom-nav .owl-prev:hover,
+	body .carousel .owl-theme .custom-nav .owl-next:hover {
+		background: #10059F;
+		transition: 0.5s;
+	}
+
+	body .carousel .owl-theme .custom-nav .owl-prev:hover i,
+	body .carousel .owl-theme .custom-nav .owl-next:hover i {
+		color: #fff;
+	}
+}
+
+body .carousel .owl-theme .custom-nav .owl-next i:before {
+	position: relative;
+	right   : -1px;
+}
+
+body .carousel .owl-theme .custom-nav .owl-prev i:before {
+	position: relative;
+	left    : -1px;
 }
 
 
@@ -1232,105 +1307,6 @@ a.animated-button5.victoria-one5:after {
 #button.show {
 	opacity   : 1;
 	visibility: visible;
-}
-
-////header//////
-body .carousel {
-	width   : 100%;
-	margin  : 0px auto;
-	position: relative;
-}
-
-body .carousel .owl-theme .owl-dots {
-	position: absolute;
-	left    : 47%;
-	bottom  : 0%;
-}
-
-body .carousel .owl-theme .owl-dots .owl-dot {
-	outline: none;
-}
-
-@media only screen and (max-width: 767px) {
-	body .carousel .owl-theme .owl-dots {
-		left: 40%;
-	}
-}
-
-body .carousel .owl-theme .owl-dots .owl-dot span {
-	background: #fff;
-}
-
-body .carousel .owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-	background: #10059F;
-}
-
-@media only screen and (max-width: 767px) {
-
-	body .carousel .owl-theme .custom-nav .owl-next,
-	body .carousel .owl-theme .custom-nav .owl-prev {
-		top: 30%;
-	}
-}
-
-body .carousel .owl-theme .custom-nav .owl-next {
-	right: 10px;
-}
-
-body .carousel .owl-theme .custom-nav .owl-prev {
-	left: 10px;
-}
-
-body .carousel .owl-theme .custom-nav .owl-prev i,
-body .carousel .owl-theme .custom-nav .owl-next i {
-	font-size: 20px;
-	color    : #000;
-}
-
-body .carousel .owl-theme .custom-nav .owl-prev,
-body .carousel .owl-theme .custom-nav .owl-next {
-	transition      : 0.5s;
-	width           : 35px;
-	height          : 35px;
-	border-radius   : 50%;
-	background-color: #fff;
-	position        : absolute;
-	top             : 43%;
-	border          : none;
-	z-index         : 1;
-	outline         : none;
-	box-shadow      : 0px 0px 5px 0px #aaa;
-}
-
-/* @media only screen and (max-width: 767px){
-  body .carousel .owl-theme .custom-nav .owl-prev,body .carousel .owl-theme .custom-nav .owl-next{
-    background-color: unset;
-    box-shadow: unset;
-  }
-} */
-@media only screen and (min-width: 767px) {
-
-	body .carousel .owl-theme .custom-nav .owl-prev:hover,
-	body .carousel .owl-theme .custom-nav .owl-next:hover {
-		background: #10059F;
-		transition: 0.5s;
-	}
-
-	body .carousel .owl-theme .custom-nav .owl-prev:hover i,
-	body .carousel .owl-theme .custom-nav .owl-next:hover i {
-		color: #fff;
-	}
-}
-
-body .carousel .owl-theme .custom-nav .owl-next i:before {
-	position: relative;
-	right   : -1px;
-}
-
-body .carousel .owl-theme .custom-nav .owl-prev i:before {
-	position: relative;
-	left    : -1px;
 }
 
 //////////	 product item	////////////

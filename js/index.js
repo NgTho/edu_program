@@ -358,7 +358,7 @@ $(document).ready(function () {
     );
   } */
   ////////////////  animate dropdown menu mobile ////////////
-  $(document).ready(function () {
+  /* $(document).ready(function () {
     $('.dropdown')
       .on('show.bs.dropdown', function () {
         $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
@@ -371,7 +371,7 @@ $(document).ready(function () {
       .on('hidden.bs.dropdown', function () {
         $(this).addClass('open');
       });
-  });
+  }); */
 
 });
 ////////////////    Mobile Dropdown Menu Snippet    //////////////////////
