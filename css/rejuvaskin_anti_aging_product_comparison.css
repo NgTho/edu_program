@@ -1,0 +1,70 @@
+body .rejuvaskin_anti_aging_product_comparison .top_1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 80px;
+}
+body .rejuvaskin_anti_aging_product_comparison .top_1 hr {
+  border-top: 2px solid #000;
+  width: 200px;
+}
+body .rejuvaskin_anti_aging_product_comparison .top_1 .text_1 {
+  font-family: 'PlayfairDisplay';
+  font-size: 36px;
+}
+body .rejuvaskin_anti_aging_product_comparison .top_1 .text_2 a {
+  color: #444;
+}
+@media only screen and (max-width: 767px) {
+  body .rejuvaskin_anti_aging_product_comparison .top_1 {
+    margin-top: 70px;
+  }
+}
+body .rejuvaskin_anti_aging_product_comparison .top_2 {
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 767px) {
+  body .rejuvaskin_anti_aging_product_comparison .top_2 .block_1 {
+    overflow-x: scroll !important;
+  }
+}
+body .rejuvaskin_anti_aging_product_comparison .top_2 table {
+  margin-bottom: 20px;
+}
+body .rejuvaskin_anti_aging_product_comparison .top_2 table thead {
+  background-color: #383838;
+  color: #fff;
+  font-size: 14px;
+}
+body .rejuvaskin_anti_aging_product_comparison .top_2 table thead tr th {
+  text-align: center;
+  vertical-align: top;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body .rejuvaskin_anti_aging_product_comparison .top_2 table tbody tr td {
+  border-top: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-left: 2px solid #fff;
+}
+body .rejuvaskin_anti_aging_product_comparison .top_2 table .text_1 {
+  font-weight: bold;
+}
+body .rejuvaskin_anti_aging_product_comparison .top_2 .btn_1 {
+  border-radius: 0px;
+  border: 2px solid #252525;
+  padding: 0px 25px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 42px;
+  background-color: #252525;
+  transition: all ease 0.5s;
+  margin: auto;
+  margin-top: 30px;
+}
+body .rejuvaskin_anti_aging_product_comparison .top_2 .btn_1:hover {
+  background-color: #fff;
+  color: #252525;
+  transition: all ease 0.5s;
+}

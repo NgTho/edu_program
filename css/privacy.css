@@ -1,0 +1,17 @@
+body .privacy .top_1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 80px;
+}
+body .privacy .top_1 .text_1 {
+  font-family: 'PlayfairDisplay';
+  font-size: 36px;
+}
+body .privacy .top_1 .text_2 {
+  font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  body .privacy .top_1 {
+    margin-top: 70px;
+  }
+}

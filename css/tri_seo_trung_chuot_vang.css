@@ -1,0 +1,338 @@
+@font-face {
+  font-family: 'Lato-Heavy';
+  src: url(fonts/Lato-Heavy.ttf);
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url(fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url(fonts/Lato-Thin.ttf);
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url(fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: 'Lato-Black';
+  src: url(fonts/Lato-Black.ttf);
+}
+body {
+  font-family: 'Lato-Regular';
+  padding-top: 80px;
+}
+body .top_1 {
+  position: relative;
+}
+body .top_1 img {
+  width: 100%;
+}
+body .top_1 .img_1 {
+  width: unset;
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  z-index: 1;
+}
+body .top_1 .img_2 {
+  width: 15%;
+  position: absolute;
+  left: 0px;
+  top: -20px;
+  z-index: 1;
+}
+body .top_2m {
+  display: none;
+}
+body .top_2 {
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/tri_seo_trung_chuot_vang_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15vw 20px 50px;
+  text-align: center;
+}
+body .top_2 .img_1 {
+  margin: auto;
+}
+body .top_2 .text_1 {
+  color: #fce013;
+  font-family: 'Lato-Heavy';
+  font-size: 23px;
+  margin-top: 20px;
+}
+body .top_2 .text_2 {
+  color: #fff;
+  font-family: 'Lato-Bold';
+  font-size: 23px;
+  padding: 0px 50px;
+}
+body .top_2 .text_3 {
+  font-family: 'Lato-Thin';
+}
+@media only screen and (max-width: 767px) {
+  body .top_1 .img_1 {
+    width: 25%;
+    right: 0px;
+    top: -20px;
+  }
+  body .top_1 .img_2 {
+    left: 0px;
+    top: -5px;
+  }
+  body .top_2m {
+    display: block;
+  }
+  body .top_2 {
+    position: relative;
+    z-index: 1;
+    background-image: url(../images/tri_seo_trung_chuot_vang_3_2m.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    padding: 5vw 20px 50px;
+    text-align: center;
+  }
+  body .top_2 .img_1 {
+    margin: auto;
+    margin-top: 30px;
+  }
+  body .top_2 .text_1 {
+    font-size: 16px;
+  }
+  body .top_2 .text_2 {
+    font-size: 16px;
+  }
+}
+body .top_3 {
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/tri_seo_trung_chuot_vang_9.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  padding: 30px 0px;
+  color: #fff;
+  font-size: 23px;
+}
+body .top_3 .text_2 {
+  font-family: 'Lato-Black';
+}
+@media only screen and (max-width: 767px) {
+  body .top_3 {
+    font-size: 14px;
+    background-size: contain;
+    padding: 30px 15px;
+  }
+}
+body .top_4 {
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/tri_seo_trung_chuot_vang_12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 0px 50px ;
+}
+body .top_4 .text_1 {
+  text-align: center;
+  font-size: 37px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(to right, #d3b05c, #cdbc8c, #d3b05c, #cdbc8c, #d3b05c);
+  background: linear-gradient(to right, #d3b05c, #cdbc8c, #d3b05c, #cdbc8c, #d3b05c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body .top_4 a:hover {
+  text-decoration: none;
+}
+body .top_4 .block_1 {
+  background-color: #f4e8bd;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0px 40px;
+  font-family: 'Lato-Black';
+  font-size: 20px;
+  position: relative;
+  transition: all ease 0.5s;
+}
+body .top_4 .block_1:hover {
+  position: relative;
+  transition: all ease 0.5s;
+  margin-top: -10px;
+}
+body .top_4 .block_1 .img_1 {
+  width: 100%;
+}
+body .top_4 .block_1 p {
+  margin-bottom: 0px;
+}
+body .top_4 .block_1 .text_2 {
+  color: #123366;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+body .top_4 .block_1 .text_3 {
+  background-color: #0f3a74;
+  color: #fff;
+  padding: 0px 10px 0px 20px;
+  position: relative;
+  left: -20px;
+}
+body .top_4 .block_1 .text_4 {
+  font-size: 26px;
+  color: #cc000a;
+}
+body .top_4 .hr_1 {
+  width: 50px;
+  margin: 30px auto;
+  border-top: 5px solid #f4e8bd;
+  border-radius: 10px;
+}
+body .top_4 .img_2 {
+  width: unset;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  z-index: 1;
+}
+@media only screen and (max-width: 767px) {
+  body .top_4 {
+    background-size: contain;
+    background-repeat: repeat-y;
+    padding: 0px 0px 50px ;
+  }
+  body .top_4 .text_1 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  body .top_4 a:hover {
+    text-decoration: none;
+  }
+  body .top_4 .block_1 {
+    margin-bottom: 20px;
+  }
+  body .top_4 .block_1:hover {
+    margin-top: 0px;
+  }
+  body .top_4 .block_1 .img_1 {
+    margin: auto;
+  }
+  body .top_4 .block_1 p {
+    margin-bottom: 0px;
+  }
+  body .top_4 .block_1 .text_2 {
+    color: #123366;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  body .top_4 .block_1 .text_3 {
+    background-color: #0f3a74;
+    color: #fff;
+    padding: 0px 10px 0px 20px;
+    position: relative;
+    left: -20px;
+  }
+  body .top_4 .block_1 .text_4 {
+    font-size: 26px;
+    color: #cc000a;
+  }
+  body .top_4 .hr_1 {
+    width: 50px;
+    margin: 30px auto;
+    border-top: 5px solid #f4e8bd;
+    border-radius: 10px;
+  }
+  body .top_4 .img_2 {
+    width: 25%;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    z-index: 1;
+  }
+}
+body .top_5 {
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/tri_seo_trung_chuot_vang_20_1.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+  padding: 5vw 0px 0vw;
+}
+body .top_5 a .block_1:hover {
+  text-decoration: underline;
+}
+body .top_5 .block_1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  float: left;
+}
+body .top_5 .block_1 .img_1 {
+  margin-right: 10px;
+  position: relative;
+  top: -5px;
+}
+body .top_5 .block_1 .img_2 {
+  margin-left: 20px;
+  top: -15px;
+}
+body .top_5 .block_1 .text_1 {
+  font-family: 'Lato-Black';
+  font-size: 25px;
+  color: #0e468b;
+}
+body .top_5 .block_1 .text_2 {
+  font-family: 'Lato-Black';
+  font-size: 20px;
+}
+body .top_5 .block_1 .text_3 {
+  color: #565656;
+}
+body .top_5 .block_2 {
+  margin-left: 23%;
+}
+@media only screen and (max-width: 767px) {
+  body .top_5 {
+    background-size: contain;
+    padding: 15px;
+  }
+  body .top_5 .block_1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    float: none;
+  }
+  body .top_5 .block_1 .img_1 {
+    margin-right: 10px;
+    position: relative;
+    top: -5px;
+  }
+  body .top_5 .block_1 .img_2 {
+    margin-left: 0px;
+    top: -10px;
+  }
+  body .top_5 .block_1 .text_1 {
+    font-size: 16px;
+    color: #0e468b;
+  }
+  body .top_5 .block_1 .text_2 {
+    font-size: 16px;
+  }
+  body .top_5 .block_1 .text_3 {
+    color: #565656;
+    margin-left: 0px;
+  }
+  body .top_5 .block_1 .clear {
+    clear: both;
+  }
+  body .top_5 .block_2 {
+    margin-left: unset;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body {
+    padding-top: 70px;
+  }
+}

@@ -1,0 +1,291 @@
+body .silicone_scar_gel .top_1 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7 !important;
+  margin-top: 80px;
+  background-image: url(../images/silicone_scar_gel_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+body .silicone_scar_gel .top_1 .text_1 {
+  font-family: 'PlayfairDisplay';
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+body .silicone_scar_gel .top_1 .text_2 {
+  font-size: 24px;
+  font-family: 'PlayfairDisplay';
+}
+@media only screen and (max-width: 767px) {
+  body .silicone_scar_gel .top_1 {
+    margin-top: 70px;
+  }
+}
+body .silicone_scar_gel .top_2 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  background-color: #ededed !important;
+}
+body .silicone_scar_gel .top_2 .text_1 {
+  font-size: 14px;
+  font-weight: bold;
+}
+body .silicone_scar_gel .top_3 {
+  padding-bottom: 100px;
+  padding-top: 50px;
+  background-color: #fff;
+}
+body .silicone_scar_gel .top_3 .block_1 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+body .silicone_scar_gel .top_3 .block_1 .block_2 {
+  border: 1px solid #e3e3e3;
+  padding: 15px;
+}
+body .silicone_scar_gel .top_3 .block_1 .block_2 .text_1 {
+  color: #5b5b5b;
+  font-family: 'PlayfairDisplay';
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+body .silicone_scar_gel .top_3 .block_1 .block_2 .text_2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+body .silicone_scar_gel .top_3 .block_3 {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+}
+body .silicone_scar_gel .top_3 .block_3 .block_4 {
+  border: 1px solid #e3e3e3;
+  padding: 30px;
+}
+body .silicone_scar_gel .top_3 .block_3 .block_4 .text_1 {
+  color: #5b5b5b;
+  font-family: 'PlayfairDisplay';
+  font-size: 28px;
+}
+body .silicone_scar_gel .top_3 .block_3 .block_4 .text_2 {
+  font-family: 'PlayfairDisplay';
+  font-size: 24px;
+}
+body .silicone_scar_gel .top_3 .block_3 .block_4 .victoria-one {
+  width: 40%;
+  margin: 20px 0px;
+}
+body .silicone_scar_gel .top_3 .block_3 .block_4 .btn_1 {
+  border-radius: 0px;
+  border: 2px solid #252525;
+  padding: 5px 25px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 42px;
+  background-color: #252525;
+  transition: all ease 0.5s;
+}
+body .silicone_scar_gel .top_3 .block_3 .block_4 .btn_1:hover {
+  background-color: #fff;
+  color: #252525;
+  transition: all ease 0.5s;
+}
+@media only screen and (max-width: 767px) {
+  body .silicone_scar_gel .top_3 .block_1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  body .silicone_scar_gel .top_3 .block_1 .block_2 {
+    padding: 15px;
+  }
+  body .silicone_scar_gel .top_3 .block_3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+  }
+  body .silicone_scar_gel .top_3 .block_3 .block_4 {
+    padding: 15px;
+  }
+}
+body .silicone_scar_gel .top_4 {
+  background-color: #f7f7f7 !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+body .silicone_scar_gel .top_4 .text_1 {
+  font-family: 'PlayfairDisplay';
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+body .silicone_scar_gel .top_4 .img_1 {
+  margin-bottom: 20px;
+}
+body .silicone_scar_gel .top_5 {
+  background-image: url(../images/silicone_scar_gel_7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+body .silicone_scar_gel .top_5 .text_1 {
+  font-family: 'PlayfairDisplay';
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+body .silicone_scar_gel .top_5 .img_1 {
+  margin: auto;
+  margin-bottom: 30px;
+}
+body .silicone_scar_gel .top_5 .text_2 {
+  font-family: 'PlayfairDisplay';
+  font-size: 18px;
+}
+body .silicone_scar_gel .top_5 .text_4 {
+  font-style: italic;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 767px) {
+  body .silicone_scar_gel .top_5 {
+    background-position: center !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  body .silicone_scar_gel .top_5 .text_3 {
+    margin-bottom: 30px;
+  }
+}
+body .silicone_scar_gel .top_8 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+body .silicone_scar_gel .top_8 .tab-content {
+  padding: 15px;
+}
+body .silicone_scar_gel .top_8 .tab-content .text_1 {
+  font-size: 24px;
+  font-family: 'PlayfairDisplay';
+}
+body .silicone_scar_gel .top_8 .tab-content .text_2 {
+  width: 62%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+body .silicone_scar_gel .top_8 .tab-content .block_1 {
+  margin-bottom: 20px;
+}
+body .silicone_scar_gel .top_8 .tab-content .block_1 .block_2 {
+  border: 1px solid #e3e3e3;
+  padding: 15px;
+}
+body .silicone_scar_gel .top_8 .tab-content .block_1 .block_2 .text_3 {
+  color: #5b5b5b;
+  font-family: 'PlayfairDisplay';
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-top: 30px;
+  text-align: left;
+}
+body .silicone_scar_gel .top_8 .tab-content .block_1 .block_2 .text_4 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+}
+@media only screen and (max-width: 767px) {
+  body .silicone_scar_gel .top_8 .btn_1 {
+    width: 100%;
+  }
+  body .silicone_scar_gel .top_8 ul.tabs {
+    padding: 0px;
+  }
+  body .silicone_scar_gel .top_8 ul.tabs li {
+    background: none;
+    color: #222;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
+  body .silicone_scar_gel .top_8 ul.tabs li.current .btn_1 {
+    background-color: #252525;
+    color: #fff;
+    transition: all ease 0.5s;
+    border: 2px solid #252525;
+  }
+  body .silicone_scar_gel .top_8 .tab-content .text_2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  body .silicone_scar_gel .top_8 .mobi {
+    display: block;
+  }
+  body .silicone_scar_gel .top_8 .tab-content.currentm {
+    display: inherit;
+  }
+  body .silicone_scar_gel .top_8 .tab-content.current {
+    display: none;
+  }
+}
+body .silicone_scar_gel .top_6 {
+  padding-bottom: 50px;
+  background-color: #fff !important;
+}
+body .silicone_scar_gel .top_6 .block_1 {
+  padding: 50px 60px;
+  background-color: #eaeaea !important;
+  min-height: 360px;
+}
+body .silicone_scar_gel .top_6 .block_1 .img_1 {
+  margin: auto;
+  margin-bottom: 30px;
+}
+body .silicone_scar_gel .top_6 .block_2 {
+  background-color: #fff !important;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+body .silicone_scar_gel .top_6 .block_3 {
+  background-color: #f7f7f7 !important;
+}
+@media only screen and (max-width: 767px) {
+  body .silicone_scar_gel .top_6 .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  body .silicone_scar_gel .top_6 .block_1 {
+    padding: 50px 50px;
+  }
+}
+body .silicone_scar_gel .top_7 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f7f7f7 !important;
+}
+body .silicone_scar_gel .top_7 .block_1 {
+  border-right: 2px solid #000;
+}
+body .silicone_scar_gel .top_7 .text_1 {
+  font-family: 'PlayfairDisplay';
+  font-size: 24px;
+}
+body .silicone_scar_gel .top_7 .victoria-one {
+  width: 40%;
+}
+@media only screen and (max-width: 767px) {
+  body .silicone_scar_gel .top_7 {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  body .silicone_scar_gel .top_7 .block_1 {
+    border-right: 0px;
+  }
+  body .silicone_scar_gel .top_7 .text_1 {
+    margin-top: 50px;
+  }
+  body .silicone_scar_gel .top_7 .victoria-one {
+    width: 40%;
+  }
+}
