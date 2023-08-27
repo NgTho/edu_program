@@ -1,3 +1,5 @@
+@color_blue : #10059F;
+
 body {
 	color           : #4f4f4f;
 	background-color: #fff;
@@ -31,6 +33,7 @@ body {
 		font-family: 'PlayfairDisplay-Italic';
 		src        : url(fonts/PlayfairDisplay-Italic.ttf);
 	}
+
 
 	font-family           : 'Lato-Regular';
 	font-size             : 16px;
@@ -79,6 +82,12 @@ body {
 				display: none;
 			}
 
+			.navbar-nav {
+				@media only screen and (max-width: 767px) {
+					padding: 0px 15px;
+				}
+			}
+
 			.yamm-fw {
 				min-width: 960px;
 				padding  : 30px 50px;
@@ -87,7 +96,7 @@ body {
 
 				@media only screen and (max-width: 767px) {
 					min-width: unset;
-					padding  : 15px 15px 15px 35px;
+					padding  : 5px 15px 5px 35px;
 					clear    : both;
 				}
 
@@ -96,12 +105,37 @@ body {
 					gap        : 15px;
 					align-items: flex-start;
 
+					@media only screen and (max-width: 767px) {
+						padding-left: 0px;
+						gap         : 10px;
+
+						&::before {
+							content    : "";
+							height     : ~ "calc(100% - 55px)";
+							width      : 1px;
+							left       : 12px;
+							top        : 45px;
+							border-left: 1px solid #CFCDEC;
+							position   : absolute;
+						}
+					}
+
 					p {
-						color        : #000038;
-						font-size    : 16px;
-						font-weight  : 400;
-						line-height  : 19.2px;
-						margin-bottom: 12px;
+						color      : #000038;
+						font-size  : 16px;
+						font-weight: 400;
+
+						@media only screen and (max-width: 767px) {
+							font-size: 14px !important;
+						}
+					}
+
+					img {
+						@media only screen and (max-width: 767px) {
+							max-width: 24px;
+							position : relative;
+							top      : 7px;
+						}
 					}
 
 					.t_1 {
@@ -112,7 +146,7 @@ body {
 					}
 
 					.t_2 {
-						color      : #10059F;
+						color      : @color_blue;
 						font-weight: 700;
 					}
 				}
@@ -122,9 +156,7 @@ body {
 				float        : left;
 				padding-right: 5px;
 
-				@media only screen and (max-width: 767px) {
-					width: 80%;
-				}
+				@media only screen and (max-width: 767px) {}
 			}
 
 			.dropdown {
@@ -139,8 +171,21 @@ body {
 
 			.nav>li {
 				@media only screen and (max-width: 767px) {
-					clear  : both;
-					display: block;
+					clear       : both;
+					display     : block;
+					padding-left: 15px;
+
+					&::before {
+						content         : "";
+						position        : relative;
+						top             : 25px;
+						left            : 0px;
+						width           : 5px;
+						height          : 5px;
+						border-radius   : 50%;
+						background-color: @color_blue;
+						display         : block;
+					}
 				}
 			}
 
@@ -158,15 +203,21 @@ body {
 				@media only screen and (max-width: 767px) {
 					padding-bottom: 10px !important;
 					display       : inline-block;
-					padding       : 10px 15px;
+					padding       : 8px 15px;
+					font-size     : 22px;
+					float         : right;
 				}
 			}
 
 			.open {
-				border-bottom: 2px solid #10059F;
+				border-bottom: 2px solid @color_blue;
 
 				@media only screen and (max-width: 767px) {
 					border-bottom: unset;
+					color        : @color_blue;
+					font-weight  : 700;
+					border-radius: 5px;
+					background   : rgba(82, 175, 255, 0.15);
 				}
 
 				.fa-angle-down {
@@ -204,7 +255,6 @@ body {
 
 				.fa-chevron-right {
 					display: inline-block;
-					float  : right;
 				}
 			}
 		}
@@ -237,7 +287,7 @@ body {
 			font-family   : 'PlayfairDisplay';
 			font-size     : 36px;
 			margin-bottom : 20px;
-			color         : #10059F;
+			color         : @color_blue;
 			font-weight   : 700;
 			text-transform: uppercase;
 
@@ -318,7 +368,7 @@ body {
 			}
 
 			.t_2 {
-				color      : #10059F;
+				color      : @color_blue;
 				font-size  : 16px;
 				font-weight: 700;
 
@@ -365,7 +415,7 @@ body {
 
 			.btn_2 {
 				border-radius: 20px;
-				background   : #10059F;
+				background   : @color_blue;
 				color        : #fff;
 				border       : 0px;
 				gap          : 20px;
@@ -689,7 +739,7 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-	color      : #10059F;
+	color      : @color_blue;
 	font-weight: 700;
 }
 
@@ -733,7 +783,7 @@ body .carousel .owl-theme .owl-dots .owl-dot span {
 
 body .carousel .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-	background: #10059F;
+	background: @color_blue;
 }
 
 @media only screen and (max-width: 767px) {
@@ -783,7 +833,7 @@ body .carousel .owl-theme .custom-nav .owl-next {
 
 	body .carousel .owl-theme .custom-nav .owl-prev:hover,
 	body .carousel .owl-theme .custom-nav .owl-next:hover {
-		background: #10059F;
+		background: @color_blue;
 		transition: 0.5s;
 	}
 
@@ -1391,7 +1441,7 @@ a.animated-button5.victoria-one5:after {
 		transition      : all ease 0.5s;
 		margin          : auto;
 		letter-spacing  : 1px;
-		background-color: #10059F;
+		background-color: @color_blue;
 		display         : inline-block;
 
 		@media only screen and (max-width: 767px) {
