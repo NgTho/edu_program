@@ -39,7 +39,37 @@ body {
 	font-size             : 16px;
 	-webkit-font-smoothing: antialiased;
 
+	@media (min-width: 1200px) {
+		.container {
+			width: 1260px;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color          : #4B5567;
+
+		&:hover {
+			text-decoration: none;
+			color          : #333;
+		}
+	}
+
+	.rating-symbol {
+		margin-right: 3px;
+		color       : #52AFFF;
+
+		.fa {
+			font-size: 16px;
+
+			@media only screen and (max-width: 767px) {
+				font-size: 14px;
+			}
+		}
+	}
+
 	.navbar-default {
+		height                 : 80px;
 		padding-top            : 15px;
 		//padding-bottom: 15px;
 		padding-right          : 5%;
@@ -52,6 +82,7 @@ body {
 		background-color       : rgba(255, 255, 255, .6);
 
 		@media only screen and (max-width: 767px) {
+			height : 70px;
 			padding: 10px 0px;
 		}
 
@@ -74,12 +105,43 @@ body {
 		}
 
 		.navbar-ex1-collapse {
-			.logo_mobile {
-				display: none;
+			@media only screen and (max-width: 767px) {
+				position        : fixed;
+				top             : 0;
+				left            : -330px;
+				z-index         : 9999999999;
+				width           : 330px;
+				height          : 100vh;
+				background-color: #fff;
+				overflow        : auto;
+				transition      : 0.5s;
+				display         : block;
+				border-right    : 0px solid #ccc;
+				max-height      : unset !important;
+				padding         : 15px;
+				margin          : 0px;
+
+				.fa-chevron-right {
+					display: inline-block;
+				}
 			}
 
-			.hr_1 {
+			.logo_mobile {
 				display: none;
+
+				@media only screen and (max-width: 767px) {
+					display   : block;
+					max-width : 120px;
+					margin-top: 5px;
+				}
+			}
+
+			hr {
+				display: none;
+
+				@media only screen and (max-width: 767px) {
+					display: block;
+				}
 			}
 
 			.navbar-nav {
@@ -227,36 +289,7 @@ body {
 
 			}
 
-			@media only screen and (max-width: 767px) {
-				position        : fixed;
-				top             : 0;
-				left            : -330px;
-				z-index         : 9999999999;
-				width           : 330px;
-				height          : 100vh;
-				background-color: #fff;
-				overflow        : auto;
-				transition      : 0.5s;
-				display         : block;
-				border-right    : 0px solid #ccc;
-				max-height      : unset !important;
-				padding         : 15px;
-				margin          : 0px;
 
-				.logo_mobile {
-					display   : block;
-					max-width : 120px;
-					margin-top: 5px;
-				}
-
-				.hr_1 {
-					display: block;
-				}
-
-				.fa-chevron-right {
-					display: inline-block;
-				}
-			}
 		}
 
 
@@ -279,9 +312,7 @@ body {
 		background: #F2F9FF;
 		padding   : 50px 0px;
 
-		a {
-			text-decoration: none;
-		}
+
 
 		.t_head {
 			font-family   : 'PlayfairDisplay';
@@ -1367,6 +1398,7 @@ a.animated-button5.victoria-one5:after {
 	padding         : 15px 0px 30px;
 	background-color: #fff;
 	transition      : 0.5s all;
+	margin-bottom   : 30px;
 
 	@media only screen and (max-width: 767px) {
 		margin-bottom: 20px;

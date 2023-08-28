@@ -1,0 +1,97 @@
+body .product_list {
+  margin-top: 80px;
+  background: #F2F9FF;
+  padding: 20px 0px;
+}
+body .product_list .top_1 .bl_breadcrumb .breadcrumb {
+  background: unset;
+  color: #4B5567;
+  padding: 0px;
+}
+body .product_list .top_1 .bl_breadcrumb .breadcrumb .active {
+  color: #10059F;
+}
+body .product_list .top_2 .sidebar_left {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-right: 15px;
+  width: 300px;
+}
+body .product_list .top_2 .sidebar_left .bl_header_filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .product_list .top_2 .sidebar_left .bl_header_filter .t_1 {
+  color: #10059F;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0px;
+}
+body .product_list .top_2 .sidebar_left hr {
+  margin: 15px 0px;
+}
+body .product_list .top_2 .sidebar_left .list-group {
+  margin-bottom: 0px;
+}
+body .product_list .top_2 .sidebar_left .t_1 {
+  color: #000038;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+body .product_list .top_2 .sidebar_left .list-group-item {
+  border: none;
+}
+body .product_list .top_2 .sidebar_left #price_range {
+  height: 10px !important;
+  background-color: #A7AABB !important;
+  border: none !important;
+}
+body .product_list .top_2 .sidebar_left #price_range .ui-slider-range {
+  background-color: #0068FF !important;
+}
+body .product_list .top_2 .sidebar_left #price_range .ui-slider-handle {
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 50% !important;
+  background-color: #10059F !important;
+  outline: none !important;
+  border: none !important;
+  top: -3px !important;
+}
+body .product_list .top_2 .sidebar_left #price_show {
+  margin-top: 20px;
+  display: flex;
+  gap: 60px;
+}
+body .product_list .top_2 .sidebar_left .checkbox_rating {
+  position: relative;
+  top: 1px;
+}
+body .product_list .top_2 .bl_right {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+}
+body .product_list .top_2 .bl_right .input_search {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.1867 14.4716H15.9767L20.2167 18.7316C20.6267 19.1416 20.6267 19.8116 20.2167 20.2216C19.8067 20.6316 19.1367 20.6316 18.7267 20.2216L14.4767 15.9716V15.1816L14.2067 14.9016C12.8067 16.1016 10.8967 16.7216 8.8667 16.3816C6.0867 15.9116 3.8667 13.5916 3.5267 10.7916C3.0067 6.56157 6.5667 3.00157 10.7967 3.52157C13.5967 3.86157 15.9167 6.08157 16.3867 8.86157C16.7267 10.8916 16.1067 12.8016 14.9067 14.2016L15.1867 14.4716ZM5.4767 9.97157C5.4767 12.4616 7.4867 14.4716 9.9767 14.4716C12.4667 14.4716 14.4767 12.4616 14.4767 9.97157C14.4767 7.48157 12.4667 5.47157 9.9767 5.47157C7.4867 5.47157 5.4767 7.48157 5.4767 9.97157Z' fill='%23A7AABB'/%3E%3C/svg%3E");
+  background-repeat: no-repeat no-repeat;
+  background-position: 15px;
+  background-size: auto;
+  padding: 20px 20px 20px 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+body .product_list .top_2 .bl_right .txt_header {
+  color: #10059F;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 25px 0px;
+}

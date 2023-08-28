@@ -639,7 +639,7 @@ $('.rating_detail').rating({
     });
   }
 });
-$(document).ready(function () {
+/* $(document).ready(function () {
   $(".rating-symbol").click(function () {
     var point = $('.rating_detail').val();
     var alias = $('#alias').val();
@@ -679,4 +679,4 @@ $(document).ready(function () {
   }
   setCookie("rating", 6, 6);
 
-});
+}); */

@@ -29,7 +29,33 @@ body {
   font-family: 'PlayfairDisplay-Italic';
   src: url(fonts/PlayfairDisplay-Italic.ttf);
 }
+@media (min-width: 1200px) {
+  body .container {
+    width: 1260px;
+  }
+}
+body a {
+  text-decoration: none;
+  color: #4B5567;
+}
+body a:hover {
+  text-decoration: none;
+  color: #333;
+}
+body .rating-symbol {
+  margin-right: 3px;
+  color: #52AFFF;
+}
+body .rating-symbol .fa {
+  font-size: 16px;
+}
+@media only screen and (max-width: 767px) {
+  body .rating-symbol .fa {
+    font-size: 14px;
+  }
+}
 body .navbar-default {
+  height: 80px;
   padding-top: 15px;
   padding-right: 5%;
   padding-left: 3%;
@@ -42,6 +68,7 @@ body .navbar-default {
 }
 @media only screen and (max-width: 767px) {
   body .navbar-default {
+    height: 70px;
     padding: 10px 0px;
   }
 }
@@ -62,11 +89,44 @@ body .navbar-default .logo_desk {
     top: -5px;
   }
 }
+@media only screen and (max-width: 767px) {
+  body .navbar-default .navbar-ex1-collapse {
+    position: fixed;
+    top: 0;
+    left: -330px;
+    z-index: 9999999999;
+    width: 330px;
+    height: 100vh;
+    background-color: #fff;
+    overflow: auto;
+    transition: 0.5s;
+    display: block;
+    border-right: 0px solid #ccc;
+    max-height: unset !important;
+    padding: 15px;
+    margin: 0px;
+  }
+  body .navbar-default .navbar-ex1-collapse .fa-chevron-right {
+    display: inline-block;
+  }
+}
 body .navbar-default .navbar-ex1-collapse .logo_mobile {
   display: none;
 }
-body .navbar-default .navbar-ex1-collapse .hr_1 {
+@media only screen and (max-width: 767px) {
+  body .navbar-default .navbar-ex1-collapse .logo_mobile {
+    display: block;
+    max-width: 120px;
+    margin-top: 5px;
+  }
+}
+body .navbar-default .navbar-ex1-collapse hr {
   display: none;
+}
+@media only screen and (max-width: 767px) {
+  body .navbar-default .navbar-ex1-collapse hr {
+    display: block;
+  }
 }
 @media only screen and (max-width: 767px) {
   body .navbar-default .navbar-ex1-collapse .navbar-nav {
@@ -196,35 +256,6 @@ body .navbar-default .navbar-ex1-collapse .open {
 body .navbar-default .navbar-ex1-collapse .open .fa-angle-down {
   transform: rotate(180deg);
 }
-@media only screen and (max-width: 767px) {
-  body .navbar-default .navbar-ex1-collapse {
-    position: fixed;
-    top: 0;
-    left: -330px;
-    z-index: 9999999999;
-    width: 330px;
-    height: 100vh;
-    background-color: #fff;
-    overflow: auto;
-    transition: 0.5s;
-    display: block;
-    border-right: 0px solid #ccc;
-    max-height: unset !important;
-    padding: 15px;
-    margin: 0px;
-  }
-  body .navbar-default .navbar-ex1-collapse .logo_mobile {
-    display: block;
-    max-width: 120px;
-    margin-top: 5px;
-  }
-  body .navbar-default .navbar-ex1-collapse .hr_1 {
-    display: block;
-  }
-  body .navbar-default .navbar-ex1-collapse .fa-chevron-right {
-    display: inline-block;
-  }
-}
 body .slider_desktop {
   padding-top: 0px;
   margin-top: 80px !important;
@@ -240,9 +271,6 @@ body .slider_desktop img {
 body .index {
   background: #F2F9FF;
   padding: 50px 0px;
-}
-body .index a {
-  text-decoration: none;
 }
 body .index .t_head {
   font-family: 'PlayfairDisplay';
@@ -1161,6 +1189,7 @@ a.animated-button5.victoria-one5:after {
   padding: 15px 0px 30px;
   background-color: #fff;
   transition: 0.5s all;
+  margin-bottom: 30px;
 }
 @media only screen and (max-width: 767px) {
   .block_product {
