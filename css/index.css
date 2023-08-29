@@ -42,6 +42,9 @@ body a:hover {
   text-decoration: none;
   color: #333;
 }
+body .t_blue {
+  color: #10059F;
+}
 body .rating-symbol {
   margin-right: 3px;
   color: #52AFFF;
