@@ -68,6 +68,14 @@ body {
 		}
 	}
 
+	header {
+		position: sticky;
+		top     : 0px;
+		z-index : 9999;
+
+		@media only screen and (max-width: 767px) {}
+	}
+
 	.navbar-default {
 		height                 : 80px;
 		padding-top            : 15px;
@@ -80,6 +88,10 @@ body {
 		backdrop-filter        : saturate(180%) blur(15px);
 		-webkit-backdrop-filter: saturate(180%) blur(15px);
 		background-color       : rgba(255, 255, 255, .6);
+		margin-bottom          : 0px;
+		border                 : none;
+		border-bottom          : 1px solid #EAECEF;
+		border-radius          : 0px;
 
 		@media only screen and (max-width: 767px) {
 			height : 70px;
@@ -297,14 +309,9 @@ body {
 
 	.slider_desktop {
 		padding-top: 0px;
-		margin-top : 80px !important;
 
 		img {
 			width: 100%;
-		}
-
-		@media only screen and (max-width: 767px) {
-			margin-top: 70px !important;
 		}
 	}
 

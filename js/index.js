@@ -311,28 +311,7 @@ $(document).ready(function () {
 
 
   ////////////////////////////////////    amination dropdown menu    //////////////////////////
-  /* if (document.documentElement.clientWidth > 767) {
-    $(".dropdown_1").hover(
-      function () {
-        $('.level_1', this).not('.in .level_1').stop(true, true).fadeIn(500);
-        $(this).toggleClass('open');
-      },
-      function () {
-        $('.level_1', this).not('.in .level_1').stop(true, true).fadeOut(100);
-        $(this).toggleClass('open');
-      }
-    );
-    $(".dropdown_2").hover(
-      function () {
-        $('.level_2', this).not('.in .level_2').stop(true, true).fadeIn(500);
-        $(this).toggleClass('open');
-      },
-      function () {
-        $('.level_2', this).not('.in .level_2').stop(true, true).fadeOut(100);
-        $(this).toggleClass('open');
-      }
-    );
-  } */
+
   if (document.documentElement.clientWidth > 767) {
     $(".dropdown").hover(
       function () {
@@ -345,20 +324,8 @@ $(document).ready(function () {
       }
     );
   }
-  /* if (document.documentElement.clientWidth < 767) {
-    $(".dropdown_2").click(
-      function () {
-        $('.level_2', this).not('.in .level_2').stop(true, true).fadeIn(250);
-        $(this).toggleClass('open');
-      },
-      function () {
-        $('.level_2', this).not('.in .level_2').stop(true, true).fadeOut(500);
-        $(this).toggleClass('open');
-      }
-    );
-  } */
   ////////////////  animate dropdown menu mobile ////////////
-  /* $(document).ready(function () {
+  $(document).ready(function () {
     $('.dropdown')
       .on('show.bs.dropdown', function () {
         $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
@@ -371,7 +338,7 @@ $(document).ready(function () {
       .on('hidden.bs.dropdown', function () {
         $(this).addClass('open');
       });
-  }); */
+  });
 
 });
 ////////////////    Mobile Dropdown Menu Snippet    //////////////////////
@@ -418,6 +385,10 @@ function close_menu() {
   $(".navbar-ex1-collapse").css({ "left": "-330px" });
   $(".close_menu_body").remove();
   $(".navbar-ex1-collapse").removeClass('active');
+  $(".sidebar_left").css({
+    "right": "-300px"
+  });
+  $(".sidebar_left").removeClass('active');
 }
 function close_click_buy() {
   $('.bl_click_buy').css({ 'bottom': '-500px', "transition": "all ease 0.5s" });
@@ -436,29 +407,15 @@ $(".btn_buy_popup").click(function (e) {
 $(".btn_close_click_buy").click(function (e) {
   close_click_buy();
 });
-////////////////    Multi level menu mobile    //////////////////////
-if (document.documentElement.clientWidth < 767) {
-  (function ($) {
-    $(document).ready(function () {
-      $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-        $(this).parent().siblings().removeClass('open');
-        $(this).parent().toggleClass('open');
-      });
-    });
-  })(jQuery);
-  ////////////////  animate dropdown menu mobile ////////////
-  $(document).ready(function () {
-    $('.dropdown').on('show.bs.dropdown', function (e) {
-      $(this).find('.dropdown-menu').first().stop(true, true).slideDown(250);
-    });
-    $('.dropdown').on('hide.bs.dropdown', function (e) {
-      $(this).find('.dropdown-menu').first().stop(true, true).slideUp(0);
-    });
-
+function open_filter() {
+  $(".sidebar_left").css({
+    "right": "0px"
   });
+  $("body").append('<div class="close_menu_body" onclick="close_menu()"></div>');
+  $(".sidebar_left").addClass('active');
 }
+
+
 ////////////////    Fade in Caption Carousel    //////////////////////
 $(document).ready(function () {
   var $carousel = $('#myCarousel');

@@ -23,7 +23,7 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav class="navbar navbar-default" role="navigation">
 			<div class="container-fluid ">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header ">
@@ -181,7 +181,7 @@
 		<div class="top_2">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 sidebar_left" id="sidebar">
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 sidebar_left">
 						<div class="bl_header_filter">
 							<p class="t_1">Bộ lọc</p>
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -259,19 +259,31 @@
 						<div class="list-group">
 							<p class="t_1">Rating</p>
 							<div class="list-group-item checkbox">
-								<label>
-									<input type="checkbox" class="common_selector checkbox_rating" value="">
+								<label class="checkbox_rating">
+									<input type="checkbox" class="common_selector" value="">
 								</label>
 								<input type="hidden" class="rating" value="0" data-filled="fa fa-star"
 									data-empty="fa fa-star-o" />
 							</div>
 						</div>
 						<hr>
-						<img src="images/product_list_1.jpg" alt="" class="img-responsive">
+						<a href=""><img src="images/product_list_1.jpg" alt="" class="img-responsive img_1"></a>
 					</div>
 					<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 bl_right">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bl_search" onclick="open_filter()">
 							<input class="form-control input_search" type="text" placeholder="Kem trị sẹo" name="">
+							<div class="btn_toggle">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none">
+									<path d="M16 12H8" stroke="#4B5567" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M18 7L6 7" stroke="#4B5567" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M10 17L14 17" stroke="#4B5567" stroke-width="1.5" stroke-linecap="round" />
+								</svg>
+								<p class="t_1">Bộ lọc</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
 							<h1 class="txt_header">Dưỡng ẩm </h1>
 						</div>
 						<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
@@ -377,6 +389,7 @@
 	</div>
 </body>
 <script src="vendor/jquery-ui.min.js"></script>
+<script src="vendor/jquery.ui.touch-punch.min.js"></script>
 <link href="vendor/jquery-ui.min.css" rel="stylesheet">
 <script>
 	$(document).ready(function () {
