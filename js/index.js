@@ -1,12 +1,12 @@
 /////////////////////////////// carousel //////////////////////////
 
 $(document).ready(function () {
-  let owlCarouselFunction = (element, numDesk = 1, numMobile = 1, loop = false, autoplay = false, nav = true, dots = false, margin = 0, lazyLoad = true) => {
+  let owlCarouselFunction = (element, numDesk = 1, numMobile = 1, loop = false, autoplay = false, nav = true, dots = false, margin = 0, stagePadding = 0, lazyLoad = true) => {
     var carousel = $(`.${element} .owl-carousel`);
     carousel.owlCarousel({
       center: false,
       loop: loop,
-      margin: margin,
+      margin: margin, stagePadding: stagePadding,
       autoplay: autoplay,
       navSpeed: 800,
       autoplaySpeed: 800,
@@ -22,15 +22,16 @@ $(document).ready(function () {
       responsive: {
         0: {
           items: numDesk,
-          stagePadding: 0,
         },
         767: {
-          items: numMobile
+          items: numMobile,
+
         }
       }
     });
   }
   owlCarouselFunction('slider_desktop', 1, 1, true);
+  owlCarouselFunction('slider_about', 3, 3, true, false, true, true, 15);
   /*$('.carousel_3 .owl-carousel').owlCarousel({
     loop:true,
     margin:10,

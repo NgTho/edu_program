@@ -54,6 +54,7 @@ body .product_list .top_2 .sidebar_left .bl_header_filter .t_1 {
   font-size: 21px;
   font-weight: 700;
   margin: 0px;
+  font-family: 'Lato-Bold';
 }
 body .product_list .top_2 .sidebar_left hr {
   margin: 15px 0px;
@@ -66,6 +67,7 @@ body .product_list .top_2 .sidebar_left .t_1 {
   font-size: 18px;
   font-weight: 700;
   margin-top: 10px;
+  font-family: 'Lato-Bold';
 }
 body .product_list .top_2 .sidebar_left .list-group-item {
   border: none;
@@ -166,10 +168,11 @@ body .product_list .top_2 .bl_right .txt_header {
   font-size: 24px;
   font-weight: 700;
   margin: 25px 0px;
+  font-family: 'Lato-Bold';
 }
 @media only screen and (max-width: 767px) {
   body .product_list .top_2 .bl_right .txt_header {
-    font-family: Playfair Display;
+    font-family: 'PlayfairDisplay-Bold';
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;

@@ -44,10 +44,11 @@ body a:hover {
 }
 body .t_blue {
   color: #10059F;
-  font-weight: 700;
+  font-family: 'Lato-Bold';
 }
 body .t_gold {
   color: #FFB91D;
+  font-family: 'Lato-Bold';
 }
 body .rating-symbol {
   margin-right: 3px;
@@ -201,12 +202,12 @@ body .navbar-default .navbar-ex1-collapse .yamm-fw .col_menu p {
 }
 body .navbar-default .navbar-ex1-collapse .yamm-fw .col_menu .t_1 {
   font-size: 18px;
-  font-weight: 700;
+  font-family: 'Lato-Bold';
   margin: 10px 0px 20px;
 }
 body .navbar-default .navbar-ex1-collapse .yamm-fw .col_menu .t_2 {
   color: #10059F;
-  font-weight: 700;
+  font-family: 'Lato-Bold';
 }
 body .navbar-default .navbar-ex1-collapse .text_menu {
   float: left;
@@ -283,7 +284,7 @@ body .index {
   padding: 50px 0px;
 }
 body .index .t_head {
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay-Bold';
   font-size: 36px;
   margin-bottom: 20px;
   color: #10059F;
@@ -658,7 +659,7 @@ body .footer .footer_2 .text_2 a {
 }
 .navbar-default .navbar-nav > li > a:hover {
   color: #10059F;
-  font-weight: 700;
+  font-family: 'Lato-Bold';
 }
 .navbar-collapse {
   border-top: none;
@@ -1254,6 +1255,7 @@ a.animated-button5.victoria-one5:after {
   font-weight: 700;
   font-size: 24px;
   color: #FFB91D;
+  font-family: 'Lato-Bold';
 }
 @media only screen and (max-width: 767px) {
   .block_product .t_2 {
@@ -1273,6 +1275,7 @@ a.animated-button5.victoria-one5:after {
   letter-spacing: 1px;
   background-color: #10059F;
   display: inline-block;
+  font-family: 'Lato-Bold';
 }
 @media only screen and (max-width: 767px) {
   .block_product .btn_1 {
@@ -1304,6 +1307,7 @@ a.animated-button5.victoria-one5:after {
 .block_news .t_1 {
   color: #000038;
   font-size: 18px;
+  font-family: 'Lato-Bold';
   font-weight: 700;
   margin-top: 15px;
   word-break: break-word;
@@ -1327,6 +1331,83 @@ a.animated-button5.victoria-one5:after {
   .block_news .t_more {
     font-size: 12px !important;
     margin: 10px 0px 0px !important;
+  }
+}
+.bl_register {
+  margin-top: 60px;
+  padding: 60px 0px;
+  position: relative;
+  background-color: #10059F;
+  text-align: center;
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .bl_register {
+    text-align: center;
+    padding: 35px;
+  }
+}
+.bl_register .t_1 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'PlayfairDisplay-Bold';
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 767px) {
+  .bl_register .t_1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+.bl_register .bl_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  gap: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .bl_register .bl_1 {
+    display: block;
+    margin: 15px 0px;
+  }
+}
+.bl_register .bl_1 input,
+.bl_register .bl_1 select {
+  height: 54px;
+  width: 300px;
+  border-radius: 10px;
+  border: 0px;
+  color: #10059F;
+}
+@media only screen and (max-width: 767px) {
+  .bl_register .bl_1 input,
+  .bl_register .bl_1 select {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 44px;
+  }
+}
+.bl_register .bl_1 input::placeholder,
+.bl_register .bl_1 select::placeholder {
+  color: #10059F;
+}
+.bl_register .btn_1 {
+  width: 400px;
+  height: 52px;
+  border: 0px;
+  font-weight: 800;
+  font-size: 21px;
+  border-radius: 15px;
+  background: #FFB91D;
+  font-family: 'Lato-Bold';
+}
+@media only screen and (max-width: 767px) {
+  .bl_register .btn_1 {
+    width: 100%;
+    font-size: 14px;
+    height: 38px;
+    border-radius: 5px;
   }
 }
 @media only screen and (max-width: 767px) {
