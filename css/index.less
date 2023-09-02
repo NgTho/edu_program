@@ -58,11 +58,24 @@ body {
 	.t_blue {
 		color      : #10059F;
 		font-family: 'Lato-Bold';
+		font-weight: 700;
 	}
 
 	.t_gold {
 		color      : #FFB91D;
 		font-family: 'Lato-Bold';
+		font-weight: 700;
+	}
+
+	.t_dark {
+		color      : #000038;
+		font-family: 'Lato-Bold';
+		font-weight: 700;
+	}
+
+	.t_pfd_bold {
+		font-family: 'PlayfairDisplay-Bold';
+		font-weight: 700;
 	}
 
 	.rating-symbol {
@@ -223,15 +236,13 @@ body {
 					}
 
 					.t_1 {
-						font-size  : 18px;
-						font-family: 'Lato-Bold';
-						margin     : 10px 0px 20px;
+						font-size: 18px;
+						margin   : 10px 0px 20px;
 
 					}
 
 					.t_2 {
-						color      : @color_blue;
-						font-family: 'Lato-Bold';
+						color: @color_blue;
 					}
 				}
 			}
@@ -329,15 +340,17 @@ body {
 		background: #F2F9FF;
 		padding   : 50px 0px;
 
-
+		@media only screen and (max-width: 767px) {
+			font-size: 14px;
+		}
 
 		.t_head {
-			font-family   : 'PlayfairDisplay-Bold';
 			font-size     : 36px;
 			margin-bottom : 20px;
 			color         : @color_blue;
-			font-weight   : 700;
 			text-transform: uppercase;
+			font-family   : 'PlayfairDisplay-Bold';
+			font-weight   : 700;
 
 			@media only screen and (max-width: 767px) {
 				font-size: 24px;
@@ -399,11 +412,9 @@ body {
 			}
 
 			.t_1 {
-				color      : #FFF;
-				text-align : center;
-				font-family: Playfair Display;
-				font-size  : 24px;
-				font-weight: 700;
+				color     : #FFF;
+				text-align: center;
+				font-size : 24px;
 
 				@media only screen and (max-width: 767px) {
 					font-size: 20px;
@@ -416,9 +427,7 @@ body {
 			}
 
 			.t_2 {
-				color      : @color_blue;
-				font-size  : 16px;
-				font-weight: 700;
+				font-size: 16px;
 
 				@media only screen and (max-width: 767px) {
 					font-size: 14px;
@@ -449,6 +458,7 @@ body {
 				background-color: unset;
 				min-width       : 240px;
 				margin-top      : 30px;
+				color           : #0068FF;
 
 				img {
 					margin: 0px;
@@ -497,78 +507,6 @@ body {
 
 		.top_4 {
 			margin-top: 50px;
-		}
-
-		.top_5 {
-			padding-top   : 50px;
-			padding-bottom: 50px;
-
-			.block_1 {
-				width : 65%;
-				margin: auto;
-
-				.text_1 {
-					font-family: 'PlayfairDisplay';
-					font-size  : 28px;
-				}
-
-				.text_2 {
-					font-size: 16px;
-				}
-
-				.input_1 {
-					border-radius: 0px;
-				}
-
-				.btn_1 {
-					border-radius   : 0px;
-					border          : 2px solid #252525;
-					padding         : 0px 25px;
-					font-size       : 16px;
-					color           : #fff;
-					font-weight     : 700;
-					line-height     : 42px;
-					background-color: #252525;
-					transition      : all ease 0.5s;
-					margin          : auto;
-					margin-top      : 30px;
-
-					&:hover {
-						background-color: #fff;
-						color           : #252525;
-						transition      : all ease 0.5s;
-					}
-				}
-
-				.block_2 {
-					display    : flex;
-					width      : 45%;
-					margin     : auto;
-					margin-top : 50px;
-					align-items: center;
-
-					.block_3 {
-						padding: 10px;
-					}
-				}
-			}
-		}
-
-		@media only screen and (max-width: 767px) {
-			.top_5 {
-				.block_1 {
-					width: 80%;
-
-					.block_2 {
-						width     : 100%;
-						margin-top: 30px;
-
-						.block_3 {
-							padding: 5px;
-						}
-					}
-				}
-			}
 		}
 	}
 
@@ -807,6 +745,10 @@ body .carousel {
 	width   : 100%;
 	margin  : 0px auto;
 	position: relative;
+}
+
+.owl-theme .owl-nav {
+	margin: 0px;
 }
 
 body .carousel .owl-theme .owl-dots {
@@ -1470,10 +1412,7 @@ a.animated-button5.victoria-one5:after {
 	}
 
 	.t_2 {
-		font-weight: 700;
-		font-size  : 24px;
-		color      : #FFB91D;
-		font-family: 'Lato-Bold';
+		font-size: 24px;
 
 		@media only screen and (max-width: 767px) {
 			font-size: 18px;
@@ -1527,8 +1466,6 @@ a.animated-button5.victoria-one5:after {
 	.t_1 {
 		color             : #000038;
 		font-size         : 18px;
-		font-family       : 'Lato-Bold';
-		font-weight       : 700;
 		margin-top        : 15px;
 		word-break        : break-word;
 		overflow          : hidden;
@@ -1570,8 +1507,6 @@ a.animated-button5.victoria-one5:after {
 
 	.t_1 {
 		font-size    : 32px;
-		font-weight  : 700;
-		font-family  : 'PlayfairDisplay-Bold';
 		margin-bottom: 25px;
 
 		@media only screen and (max-width: 767px) {
@@ -1620,11 +1555,10 @@ a.animated-button5.victoria-one5:after {
 		width        : 400px;
 		height       : 52px;
 		border       : 0px;
-		font-weight  : 800;
 		font-size    : 21px;
 		border-radius: 15px;
 		background   : #FFB91D;
-		font-family  : 'Lato-Bold';
+		color        : #fff;
 
 		@media only screen and (max-width: 767px) {
 			width        : 100%;

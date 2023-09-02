@@ -45,10 +45,21 @@ body a:hover {
 body .t_blue {
   color: #10059F;
   font-family: 'Lato-Bold';
+  font-weight: 700;
 }
 body .t_gold {
   color: #FFB91D;
   font-family: 'Lato-Bold';
+  font-weight: 700;
+}
+body .t_dark {
+  color: #000038;
+  font-family: 'Lato-Bold';
+  font-weight: 700;
+}
+body .t_pfd_bold {
+  font-family: 'PlayfairDisplay-Bold';
+  font-weight: 700;
 }
 body .rating-symbol {
   margin-right: 3px;
@@ -202,12 +213,10 @@ body .navbar-default .navbar-ex1-collapse .yamm-fw .col_menu p {
 }
 body .navbar-default .navbar-ex1-collapse .yamm-fw .col_menu .t_1 {
   font-size: 18px;
-  font-family: 'Lato-Bold';
   margin: 10px 0px 20px;
 }
 body .navbar-default .navbar-ex1-collapse .yamm-fw .col_menu .t_2 {
   color: #10059F;
-  font-family: 'Lato-Bold';
 }
 body .navbar-default .navbar-ex1-collapse .text_menu {
   float: left;
@@ -283,13 +292,18 @@ body .index {
   background: #F2F9FF;
   padding: 50px 0px;
 }
+@media only screen and (max-width: 767px) {
+  body .index {
+    font-size: 14px;
+  }
+}
 body .index .t_head {
-  font-family: 'PlayfairDisplay-Bold';
   font-size: 36px;
   margin-bottom: 20px;
   color: #10059F;
-  font-weight: 700;
   text-transform: uppercase;
+  font-family: 'PlayfairDisplay-Bold';
+  font-weight: 700;
 }
 @media only screen and (max-width: 767px) {
   body .index .t_head {
@@ -346,9 +360,7 @@ body .index .top_2 {
 body .index .top_2 .t_1 {
   color: #FFF;
   text-align: center;
-  font-family: Playfair Display;
   font-size: 24px;
-  font-weight: 700;
 }
 @media only screen and (max-width: 767px) {
   body .index .top_2 .t_1 {
@@ -360,9 +372,7 @@ body .index .top_2 img {
   margin: 15px auto;
 }
 body .index .top_2 .t_2 {
-  color: #10059F;
   font-size: 16px;
-  font-weight: 700;
 }
 @media only screen and (max-width: 767px) {
   body .index .top_2 .t_2 {
@@ -390,6 +400,7 @@ body .index .top_3 .btn_1 {
   background-color: unset;
   min-width: 240px;
   margin-top: 30px;
+  color: #0068FF;
 }
 body .index .top_3 .btn_1 img {
   margin: 0px;
@@ -431,64 +442,6 @@ body .index .top_3 .btn_2 {
 }
 body .index .top_4 {
   margin-top: 50px;
-}
-body .index .top_5 {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-body .index .top_5 .block_1 {
-  width: 65%;
-  margin: auto;
-}
-body .index .top_5 .block_1 .text_1 {
-  font-family: 'PlayfairDisplay';
-  font-size: 28px;
-}
-body .index .top_5 .block_1 .text_2 {
-  font-size: 16px;
-}
-body .index .top_5 .block_1 .input_1 {
-  border-radius: 0px;
-}
-body .index .top_5 .block_1 .btn_1 {
-  border-radius: 0px;
-  border: 2px solid #252525;
-  padding: 0px 25px;
-  font-size: 16px;
-  color: #fff;
-  font-weight: 700;
-  line-height: 42px;
-  background-color: #252525;
-  transition: all ease 0.5s;
-  margin: auto;
-  margin-top: 30px;
-}
-body .index .top_5 .block_1 .btn_1:hover {
-  background-color: #fff;
-  color: #252525;
-  transition: all ease 0.5s;
-}
-body .index .top_5 .block_1 .block_2 {
-  display: flex;
-  width: 45%;
-  margin: auto;
-  margin-top: 50px;
-  align-items: center;
-}
-body .index .top_5 .block_1 .block_2 .block_3 {
-  padding: 10px;
-}
-@media only screen and (max-width: 767px) {
-  body .index .top_5 .block_1 {
-    width: 80%;
-  }
-  body .index .top_5 .block_1 .block_2 {
-    width: 100%;
-    margin-top: 30px;
-  }
-  body .index .top_5 .block_1 .block_2 .block_3 {
-    padding: 5px;
-  }
 }
 body .footer .footer_1 {
   padding-top: 30px;
@@ -672,6 +625,9 @@ body .carousel {
   width: 100%;
   margin: 0px auto;
   position: relative;
+}
+.owl-theme .owl-nav {
+  margin: 0px;
 }
 body .carousel .owl-theme .owl-dots {
   position: absolute;
@@ -1252,10 +1208,7 @@ a.animated-button5.victoria-one5:after {
   }
 }
 .block_product .t_2 {
-  font-weight: 700;
   font-size: 24px;
-  color: #FFB91D;
-  font-family: 'Lato-Bold';
 }
 @media only screen and (max-width: 767px) {
   .block_product .t_2 {
@@ -1307,8 +1260,6 @@ a.animated-button5.victoria-one5:after {
 .block_news .t_1 {
   color: #000038;
   font-size: 18px;
-  font-family: 'Lato-Bold';
-  font-weight: 700;
   margin-top: 15px;
   word-break: break-word;
   overflow: hidden;
@@ -1349,8 +1300,6 @@ a.animated-button5.victoria-one5:after {
 }
 .bl_register .t_1 {
   font-size: 32px;
-  font-weight: 700;
-  font-family: 'PlayfairDisplay-Bold';
   margin-bottom: 25px;
 }
 @media only screen and (max-width: 767px) {
@@ -1396,11 +1345,10 @@ a.animated-button5.victoria-one5:after {
   width: 400px;
   height: 52px;
   border: 0px;
-  font-weight: 800;
   font-size: 21px;
   border-radius: 15px;
   background: #FFB91D;
-  font-family: 'Lato-Bold';
+  color: #fff;
 }
 @media only screen and (max-width: 767px) {
   .bl_register .btn_1 {

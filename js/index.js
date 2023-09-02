@@ -6,7 +6,8 @@ $(document).ready(function () {
     carousel.owlCarousel({
       center: false,
       loop: loop,
-      margin: margin, stagePadding: stagePadding,
+      margin: margin,
+      stagePadding: stagePadding,
       autoplay: autoplay,
       navSpeed: 800,
       autoplaySpeed: 800,
@@ -21,57 +22,66 @@ $(document).ready(function () {
       navContainer: `.${element} .custom-nav`,
       responsive: {
         0: {
-          items: numDesk,
+          items: numMobile,
         },
         767: {
-          items: numMobile,
+          items: numDesk,
 
         }
       }
     });
   }
   owlCarouselFunction('slider_desktop', 1, 1, true);
-  owlCarouselFunction('slider_about', 3, 3, true, false, true, true, 15);
-  /*$('.carousel_3 .owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
+  $('.slider_about .owl-carousel').owlCarousel({
+    center: false,
+    loop: true,
+    margin: 15,
+
     autoplay: false,
-    autoplayHoverPause: true,
-    nav:false,
-    dots: false,
-    stagePadding: 39,
-    margin : 40,
-    responsive:{
-        0:{
-            items:1,
-            stagePadding: 19,
-            margin : 20,
-        },
-        767:{
-            items:1
-        }
+    navSpeed: 800,
+    autoplaySpeed: 800,
+    nav: true,
+    dots: true,
+    autoplayTimeout: 5000,
+    lazyLoad: true,
+    lazyLoadEager: 1,
+    navText: [
+      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+      '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+    ],
+    navContainer: '.slider_about .custom-nav',
+    responsive: {
+      0: {
+        items: 2,
+        stagePadding: 80
+      },
+      767: {
+        items: 3,
+        stagePadding: 0
+
+      }
     }
   });
-  $('.carousel_4 .owl-carousel').owlCarousel({
-    loop:false,
-    margin:10,
+  /* $('.carousel_4 .owl-carousel').owlCarousel({
+    loop: false,
+    margin: 10,
     autoplay: false,
     autoplayHoverPause: true,
-    nav:false,
+    nav: false,
     dots: false,
     stagePadding: 39,
-    margin : 40,
-    responsive:{
-        0:{
-            items:1,
-            stagePadding: 19,
-            margin : 20,
-        },
-        767:{
-            items:5
-        }
+    margin: 40,
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 19,
+        margin: 20,
+      },
+      767: {
+        items: 5
+      }
     }
-  });*/
+  }); */
   ////////// owl carousel thumbnail //////////////
   var bigimage = $('.carousel_3 .owl-carousel');
   var thumbs = $('.carousel_4 .owl-carousel');
